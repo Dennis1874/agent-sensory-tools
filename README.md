@@ -4,7 +4,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Contributors](https://img.shields.io/github/contributors/Dennis1874/agent-sensory-tools)](https://github.com/Dennis1874/agent-sensory-tools/graphs/contributors)
 
->Agents🤖 have their own tools which could be faser, easier, more token-efficient.
+>Agents🤖 have their own tools（not for human） which could be faser, easier, more token-efficient.
 >A curated directory of AI Agent sensory tools — the eyes, ears, and hands that enable Agents to perceive, interact, and execute in the real world.
 
 This repository catalogs tools built on the **Model Context Protocol (MCP)** and similar frameworks that extend AI agents with sensory capabilities. Whether your agent needs to see a webpage, read a document, execute code, or monitor a system — you'll find the right tool here.
@@ -20,7 +20,7 @@ This repository catalogs tools built on the **Model Context Protocol (MCP)** and
 | [Execution](categories/execution/README.md) | ⚡ | Sandboxed code execution, cloud functions, shell commands | 4 |
 | [Monitoring](categories/monitoring/README.md) | 📊 | Error tracking, logging, analytics, CI/CD | 4 |
 
-## 🔧 What is MCP?
+## 🔧 Still MCP
 
 **Model Context Protocol (MCP)** is an open protocol that enables AI models to connect with external tools and data sources. Think of it as "USB for AI" — a standardized way for AI assistants to:
 
