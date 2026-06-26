@@ -1,0 +1,140 @@
+# 📄 File & Document Tools
+
+File system access, PDF parsing, document processing, and content extraction tools that enable AI agents to read and write documents.
+
+## Overview
+
+File and document tools enable AI agents to:
+- **Read and write** local and remote files
+- **Parse PDFs** and extract text/tables
+- **Process documents** (Word, Excel, etc.)
+- **Watch for file changes**
+- **Handle various formats** (Markdown, JSON, CSV, etc.)
+
+These tools are essential for document automation, data processing, content management, and any workflow involving file operations.
+
+---
+
+## Tools
+
+### Filesystem MCP
+
+⭐ Official MCP Server | 🔗 [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem)
+
+**Description**: Official MCP server for local filesystem operations. Secure file reading, writing, and directory management.
+
+**Key Features**:
+- Read/write files with path control
+- Directory listing and navigation
+- File search (glob patterns)
+- Create directories
+- Move, copy, delete operations
+- Path safety validation
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem"],
+      "env": {
+        "ALLOWED_DIRECTORIES": "/path/to/allowed/directory"
+      }
+    }
+  }
+}
+```
+
+---
+
+### Unstructured MCP
+
+⭐ ~7K Stars | 🔗 [GitHub](https://github.com/Unstructured-IO/unstructured-mcp)
+
+**Description**: MCP server for Unstructured.io's document parsing platform. Handles over 30 document formats intelligently.
+
+**Key Features**:
+- PDF parsing with layout preservation
+- Table extraction (structured)
+- Image extraction from documents
+- Support for 30+ file types
+- Chunking strategies for RAG
+- Cloud-hosted processing available
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "unstructured": {
+      "command": "unstructured-mcp",
+      "args": []
+    }
+  }
+}
+```
+
+Or use the Python SDK:
+```bash
+pip install unstructured
+```
+
+---
+
+### Anthropic PDF Skill
+
+⭐ Anthropic Official | 🔗 [Documentation](https://docs.anthropic.com/en/docs/build-with-claude/skill-api/pdf)
+
+**Description**: Anthropic's official PDF parsing skill for Claude. Native PDF understanding with layout awareness.
+
+**Key Features**:
+- Native PDF text extraction
+- Layout-preserving parsing
+- Table structure detection
+- Image extraction
+- Multi-column handling
+- Direct API integration
+
+**Installation**:
+Available through Anthropic API as a built-in capability. Configure via Anthropic console.
+
+---
+
+### Syncfusion DocumentSDK AI Agent Tools
+
+⭐ Enterprise Grade | 🔗 [GitHub](https://github.com/syncfusion/ai-agent-document-processing)
+
+**Description**: .NET-based document processing by Syncfusion. Enterprise-quality handling for Word, Excel, PDF, and more.
+
+**Key Features**:
+- Word document parsing and generation
+- Excel workbook manipulation
+- PDF creation and editing
+- PowerPoint processing
+- File format conversion
+- .NET ecosystem integration
+
+**Installation**:
+```bash
+dotnet add package Syncfusion.DocIORenderer.Net
+dotnet add package Syncfusion.Pdf.Net
+dotnet add package Syncfusion.XlsIO.Net
+```
+
+---
+
+## Supported Formats
+
+| Tool | PDF | Word | Excel | PowerPoint | Images |
+|------|-----|------|-------|------------|--------|
+| Filesystem MCP | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Unstructured MCP | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Anthropic PDF Skill | ✅ | ❌ | ❌ | ❌ | ✅ |
+| Syncfusion | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+---
+
+## See Also
+
+- [Code Awareness Tools](../code-awareness/README.md) - For code file handling
+- [Execution Tools](../execution/README.md) - For running scripts that process files
