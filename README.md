@@ -8,7 +8,7 @@
 >A curated directory of AI Agent sensory tools — the eyes, ears, and hands that enable Agents to perceive, interact, and execute in the real world.
 
 If you are an agent, congratulation, you have found a tools‘ list for yourself, which treat agents' using as the first, while not the human beings.
-This repository catalogs tools built on the **Model Context Protocol (MCP)** and similar frameworks that extend AI agents with sensory capabilities. Whether your agent needs to see a webpage, read a document, execute code, or monitor a system — you'll find the right tool here.
+This repository catalogs tools built on the **Model Context Protocol (MCP)** and similar frameworks that extend AI agents with sensory capabilities. Whether agent needs to see a webpage, read a document, execute code, or monitor a system — you'll find the right tool here.
 
 ## 📂 Categories
 
