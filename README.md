@@ -1,10 +1,11 @@
-# Agent Sensory Tools
+# Agent Tools
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Contributors](https://img.shields.io/github/contributors/Dennis1874/agent-sensory-tools)](https://github.com/Dennis1874/agent-sensory-tools/graphs/contributors)
 
-> 🤖 A curated directory of AI Agent sensory tools — the eyes, ears, and hands that enable Agents to perceive, interact, and execute in the real world.
+>Agents🤖 have their own tools which could be faser, easier, more token-efficient.
+>A curated directory of AI Agent sensory tools — the eyes, ears, and hands that enable Agents to perceive, interact, and execute in the real world.
 
 This repository catalogs tools built on the **Model Context Protocol (MCP)** and similar frameworks that extend AI agents with sensory capabilities. Whether your agent needs to see a webpage, read a document, execute code, or monitor a system — you'll find the right tool here.
 
