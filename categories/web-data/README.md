@@ -105,6 +105,33 @@ These tools are essential for research agents, competitive analysis, content agg
 
 ---
 
+### All-in-One MCP
+
+⭐ Multi-Service | 🔗 [GitHub](https://github.com/nguyenvanduocit/all-in-one-model-context-protocol)
+
+**Description**: Comprehensive MCP server integrating GitLab, Jira, Confluence, YouTube and more. Provides AI-powered search and multiple development workflow utilities.
+
+**Key Features**:
+- GitLab, Jira, Confluence integration
+- YouTube data fetching
+- Google Suite (Gmail, Calendar, Chat)
+- DeepSeek reasoning engine
+- RAG tools for memory and retrieval
+- CLI tools integration
+
+**Installation**:
+```bash
+go install github.com/nguyenvanduocit/all-in-one-model-context-protocol@latest
+```
+
+**Environment Variables**:
+```bash
+GOOGLE_AI_API_KEY=your_key
+JIRA_API_TOKEN=your_token
+```
+
+---
+
 ### Tavily MCP
 
 ⭐ AI-Optimized | 🔗 [GitHub](https://github.com/tavily-ai/tavily-mcp)
@@ -142,6 +169,7 @@ These tools are essential for research agents, competitive analysis, content agg
 | Brave Search | General web search | JSON | N/A |
 | Firecrawl | Website crawling | Markdown/JSON | ✅ Yes |
 | Fetch | Simple requests | Raw/JSON | ❌ No |
+| All-in-One MCP | Multi-service integration | Various | Depends on service |
 | Tavily | AI RAG workflows | Structured JSON | N/A |
 
 ---
