@@ -100,6 +100,35 @@ Available through Anthropic API as a built-in capability. Configure via Anthropi
 
 ---
 
+### MarkItDown
+
+⭐ ~85K Stars | 🔗 [GitHub](https://github.com/microsoft-markitdown)
+
+**Description**: Microsoft's official universal document converter. Converts PDF, Word, Excel, images, and audio to Markdown - optimized for AI analysis.
+
+**Key Features**:
+- Universal format conversion to Markdown
+- PDF parsing with layout preservation
+- Word document processing
+- Excel spreadsheet conversion
+- Image text extraction (OCR)
+- Audio transcription support
+- Designed specifically for AI consumption
+
+**Installation**:
+```bash
+# npm
+npm install -g @microsoft/markitdown
+
+# Python
+pip install markitdown
+
+# CLI usage
+markitdown input.pdf -o output.md
+```
+
+---
+
 ### Syncfusion DocumentSDK AI Agent Tools
 
 ⭐ Enterprise Grade | 🔗 [GitHub](https://github.com/syncfusion/ai-agent-document-processing)
@@ -128,6 +157,7 @@ dotnet add package Syncfusion.XlsIO.Net
 | Tool | PDF | Word | Excel | PowerPoint | Images |
 |------|-----|------|-------|------------|--------|
 | Filesystem MCP | ❌ | ❌ | ❌ | ❌ | ❌ |
+| MarkItDown | ✅ | ✅ | ✅ | ❌ | ✅ |
 | Unstructured MCP | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Anthropic PDF Skill | ✅ | ❌ | ❌ | ❌ | ✅ |
 | Syncfusion | ✅ | ✅ | ✅ | ✅ | ✅ |
