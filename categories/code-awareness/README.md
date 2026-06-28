@@ -19,9 +19,9 @@ These tools are essential for AI coding assistants, automated code review, docum
 
 ### codebase-memory-mcp
 
-⭐ ~9K Stars | 🔗 [GitHub](https://github.com/DeusData/codebase-memory-mcp)
+⭐ ~11K Stars | 🔗 [GitHub](https://github.com/DeusData/codebase-memory-mcp)
 
-**Description**: Code knowledge graph builder that creates semantic embeddings of your codebase. Enables context-aware AI assistance by understanding code relationships.
+**Description**: High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens.
 
 **Key Features**:
 - Automatic code graph construction
@@ -29,6 +29,7 @@ These tools are essential for AI coding assistants, automated code review, docum
 - Dependency tracking
 - Function call analysis
 - Context retrieval for any code location
+- Single static binary, zero dependencies
 
 **Installation**:
 ```json
