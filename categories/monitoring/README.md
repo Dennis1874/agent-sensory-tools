@@ -1,6 +1,6 @@
 # 📊 Monitoring Tools
 
-Error tracking, logging, analytics, and CI/CD tools that enable AI agents to observe and respond to system events.
+Error tracking, logging, analytics, CI/CD tools, and memory systems that enable AI agents to observe, respond, and maintain context across sessions.
 
 ## Overview
 
@@ -9,6 +9,7 @@ Monitoring tools enable AI agents to:
 - **Analyze logs** for patterns and anomalies
 - **Monitor product analytics** and user behavior
 - **Manage CI/CD pipelines** and deployments
+- **Maintain persistent memory** across sessions
 - **Receive alerts** for critical events
 
 These tools are essential for incident response, automated debugging, performance optimization, and proactive system management.
@@ -137,6 +138,52 @@ These tools are essential for incident response, automated debugging, performanc
     }
   }
 }
+```
+
+---
+
+### ShelbyMCP
+
+⭐ Knowledge Graph Memory | 🔗 [GitHub](https://github.com/studio-moser/shelby-mcp)
+
+**Description**: Knowledge graph memory server for MCP-compatible AI tools. Provides persistent memory with typed relationships (refines, cites, contradicts, tags).
+
+**Key Features**:
+- Knowledge graph with typed relationships
+- Cross-session persistent memory
+- Semantic memory connections
+- Zero dependencies - single binary
+- Claude Code / Codex / Gemini CLI compatible
+- Local-first, no cloud required
+
+**Installation**:
+```bash
+# Download from GitHub releases
+# No dependencies required
+```
+
+---
+
+### Memory Bank MCP
+
+⭐ Project Context Management | 🔗 [GitHub](https://github.com/t3ta/memory-bank-mcp-server)
+
+**Description**: MCP server for managing project documentation and context across Claude AI sessions. Stores structured JSON documents for consistent project knowledge.
+
+**Key Features**:
+- Global and branch-specific memory banks
+- Structured JSON document storage
+- Cross-session project context
+- Version control friendly
+- Claude, Cursor, Windsurf compatible
+- VSCode extension available
+
+**Installation**:
+```bash
+git clone https://github.com/t3ta/memory-bank-mcp-server.git
+cd memory-bank-mcp-server
+yarn install
+yarn workspace @memory-bank/mcp start --docs /path/to/your/docs
 ```
 
 ---
