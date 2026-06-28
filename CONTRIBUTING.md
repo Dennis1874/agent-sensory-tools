@@ -1,24 +1,29 @@
 # Contributing to Agent Sensory Tools
 
-Thank you for your interest in contributing! This guide will help you add new tools to the directory.
+Thank you for your interest in contributing! This document provides guidelines and instructions for contributing to this repository.
 
 ## How to Contribute
 
-### 1. Before You Start
+### Adding a New Tool
 
-- **Search first**: Check if the tool already exists in the relevant category
-- **Verify the tool**: Ensure it's actively maintained and genuinely useful for AI agents
-- **Check the format**: Review this guide for the expected content structure
+1. **Find the right category**: Check the existing categories to find the best fit for your tool:
+   - [Vision](categories/vision/) - Browser automation, screenshots, image processing
+   - [Code Awareness](categories/code-awareness/) - Code search, knowledge graphs, documentation
+   - [Web Data](categories/web-data/) - Web scraping, search APIs, content fetching
+   - [File & Document](categories/file-document/) - File system, PDF parsing, document processing
+   - [Execution](categories/execution/) - Code execution, shell commands, containers
+   - [Monitoring](categories/monitoring/) - Error tracking, logging, analytics
 
-### 2. Adding a New Tool
+2. **Check existing tools**: Make sure the tool isn't already listed
 
-Each tool entry should include:
+3. **Follow the template**: Use this structure for your tool entry:
 
 ```markdown
 ### Tool Name
-⭐ Stars: XX | 🔗 [GitHub](url)
 
-**Description**: One-sentence description of the tool
+⭐ Stars | 🔗 [GitHub](link)
+
+**Description**: Brief description of what the tool does.
 
 **Key Features**:
 - Feature 1
@@ -27,58 +32,32 @@ Each tool entry should include:
 
 **Installation**:
 ```json
-// Configuration example
+{
+  "mcpServers": {
+    "tool-name": {
+      "command": "npx",
+      "args": ["-y", "package-name"]
+    }
+  }
+}
 ```
 ```
 
-### 3. Category Guidelines
+4. **Submit a PR**: Create a pull request with your changes
 
-Choose the right category for your tool:
+## Quality Guidelines
 
-| Category | What Belongs Here |
-|----------|-------------------|
-| `vision/` | Browser automation, screenshots, image processing |
-| `code-awareness/` | Code search, documentation lookup, knowledge graphs |
-| `web-data/` | Web scraping, search APIs, content fetching |
-| `file-document/` | File operations, PDF parsing, document processing |
-| `execution/` | Code execution, shell commands, containers |
-| `monitoring/` | Error tracking, logging, analytics, CI/CD |
+- **Verify the link**: Make sure all GitHub/repository links are correct
+- **Test the installation**: If possible, test the installation instructions
+- **Be concise**: Keep descriptions clear and to the point
+- **Include stars**: Add approximate GitHub star count if available
 
-### 4. Submission Process
+## Categories Update
 
-1. **Fork the repository**
-2. **Create a branch**: `git checkout -b add/tool-name`
-3. **Add your tool** to the appropriate category README
-4. **Test your markdown** renders correctly
-5. **Commit**: `git commit -m "Add [Tool Name] to [Category]"`
-6. **Push**: `git push origin add/tool-name`
-7. **Open a Pull Request**
-
-### 5. Quality Standards
-
-Good tool entries:
-- ✅ Use the official repository URL
-- ✅ Include accurate star counts (with "as of YYYY-MM" note if uncertain)
-- ✅ Provide working installation examples
-- ✅ Describe unique features (not generic features)
-- ✅ Include the tool's official description verbatim when possible
-
-Avoid:
-- ❌ Duplicate tools already listed
-- ❌ Abandoned/deprecated projects (unless historically significant)
-- ❌ Very niche tools without clear use cases
-- ❌ Broken links or outdated information
-
-### 6. Keeping Information Current
-
-- Star counts are approximate - use "N/A" if uncertain
-- Note the date when star counts were verified
-- If a tool significantly changes, consider updating its entry
+When adding tools, update the main `README.md` table with:
+- Correct tool count per category
+- Updated total count
 
 ## Questions?
 
-Open an issue for discussion before submitting large contributions.
-
-## Thank You!
-
-Every contribution helps the AI agent community discover better tools.
+Feel free to open an issue for any questions or suggestions!
