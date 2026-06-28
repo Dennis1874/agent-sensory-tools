@@ -110,6 +110,62 @@ npm install stagehand
 
 ---
 
+### Chrome DevTools MCP
+
+⭐ Google Official | 🔗 [GitHub](https://github.com/google/chrome-devtools-mcp)
+
+**Description**: Official MCP server from Chrome DevTools team. Enables AI to directly read console logs, network requests, DOM structure, and control the browser through Developer Tools protocol.
+
+**Key Features**:
+- Direct access to browser console logs and errors
+- Network request monitoring and inspection
+- DOM structure reading and manipulation
+- Accessibility tree for reliable element detection
+- No screenshot dependency - reads actual browser state
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["-y", "@chrome-devtools-mcp/server"]
+    }
+  }
+}
+```
+
+---
+
+### agent-browser
+
+⭐ Rust Native | 🔗 [GitHub](https://github.com/agent-browser/agent-browser)
+
+**Description**: High-performance browser automation CLI for AI agents, built with native Rust. Provides snapshot and ref capabilities optimized for AI understanding of page state.
+
+**Key Features**:
+- Native Rust implementation for speed
+- Snapshot command for complete page state
+- Ref command for semantic element referencing
+- Multi-tab management
+- Cookie and storage manipulation
+- PDF export and screenshot
+
+**Installation**:
+```bash
+# npm
+npm install -g agent-browser
+
+# Homebrew (macOS)
+brew install agent-browser
+
+# Rust
+cargo install agent-browser
+agent-browser install --with-deps
+```
+
+---
+
 ### Sharp MCP
 
 ⭐ Active Development | 🔗 [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/-sharp)
@@ -172,6 +228,8 @@ npm install stagehand
 | Playwright MCP | Cross-browser testing | All major | Medium |
 | Browser Use | AI agent workflows | Chrome | Low |
 | stagehand | Vision-based AI | Cloud browsers | Low |
+| Chrome DevTools MCP | Debugging & inspection | Chrome | Low |
+| agent-browser | High-performance CLI | Chrome | Medium |
 | Sharp MCP | Image processing | N/A | Low |
 | Screenshot MCP | Quick captures | Chrome | Very Low |
 
