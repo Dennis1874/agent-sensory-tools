@@ -107,7 +107,7 @@ def hello():
 
 ### Docker MCP
 
-⭐ Community | 🔗 [GitHub](https://github.com(modelcontextprotocol/servers/tree/main/src/docker)
+⭐ Community | 🔗 [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/docker)
 
 **Description**: MCP server for Docker container management. Spin up containers for isolated execution environments.
 
