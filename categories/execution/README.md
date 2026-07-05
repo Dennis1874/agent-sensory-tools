@@ -216,3 +216,30 @@ npm install -g herdr
 
 - [Code Awareness Tools](../code-awareness/README.md) - For understanding code before execution
 - [Monitoring Tools](../monitoring/README.md) - For tracking execution results
+
+
+---
+
+### CC Switch
+
+⭐ Trending | 🔗 [GitHub](https://github.com/farion1231/cc-switch)
+
+**Description**: Unified management tool for AI coding CLI tools. Manage Claude Code, Codex CLI, Gemini CLI, and other AI development tools from a single interface. Supports model switching, MCP management, and Skills configuration.
+
+**Key Features**:
+- Unified management for Claude Code, Codex CLI, Gemini CLI
+- One-click model switching (e.g., switch to DeepSeek, Qwen, GLM)
+- MCP server management across all tools
+- Skills and plugins configuration
+- Local routing proxy for seamless model switching
+- Cross-tool settings synchronization
+
+**Installation**:
+```bash
+# npm
+npm install -g cc-switch
+
+# Or download from GitHub releases
+```
+
+---

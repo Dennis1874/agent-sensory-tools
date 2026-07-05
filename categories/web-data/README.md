@@ -187,3 +187,39 @@ JIRA_API_TOKEN=your_token
 
 - [Vision Tools](../vision/README.md) - For visual web interactions
 - [File & Document Tools](../file-document/README.md) - For processing scraped content
+
+
+---
+
+### Headroom
+
+⭐ ~50K Stars | 🔗 [GitHub](https://github.com/chopratejas/headroom)
+
+**Description**: Token compression engine for AI agents. Compresses tool outputs, logs, RAG chunks, and files before they reach the LLM. 60-95% fewer tokens with same answer quality. Works as Library, Proxy, Agent Wrapper, or MCP Server.
+
+**Key Features**:
+- Transparent compression layer between Agent and LLM
+- 60-95% token savings with <3% quality loss
+- Six-layer compression pipeline (CacheAligner → ContentRouter → Compressors)
+- Four deployment modes: Library, Proxy, Agent Wrap, MCP Server
+- Cross-agent memory sharing (SharedContext)
+- Local-first, data never leaves your machine
+- Compatible with Claude Code, Cursor, Codex, Aider, Copilot, and more
+- `headroom learn` auto-analyzes failed sessions for improvement
+
+**Installation**:
+```bash
+# Install
+pip install "headroom-ai[all]"
+
+# Wrap your AI agent (zero code changes)
+headroom wrap claude
+
+# Or run as MCP server
+headroom mcp install
+
+# Or as HTTP proxy (zero code, change base URL)
+headroom proxy --port 8787
+```
+
+---

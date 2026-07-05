@@ -132,3 +132,34 @@ npm install -g @sourcegraph/cody-cli
 
 - [File & Document Tools](../file-document/README.md) - For reading and writing source files
 - [Web Data Tools](../web-data/README.md) - For searching online resources
+
+
+---
+
+### Serena
+
+⭐ ~18K Stars | 🔗 [GitHub](https://github.com/oraios/serena)
+
+**Description**: Semantic code search and editing tool designed for large codebases. Uses advanced code understanding to find relevant code sections and make precise edits across massive repositories.
+
+**Key Features**:
+- Semantic code search across large codebases
+- Intelligent code editing with context awareness
+- Support for multiple programming languages
+- Fast indexing and querying
+- MCP-compatible server mode
+- IDE integration support
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "serena": {
+      "command": "npx",
+      "args": ["-y", "serena-mcp"]
+    }
+  }
+}
+```
+
+---

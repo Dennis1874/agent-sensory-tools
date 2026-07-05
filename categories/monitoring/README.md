@@ -277,3 +277,69 @@ yarn workspace @memory-bank/mcp start --docs /path/to/your/docs
 
 - [Execution Tools](../execution/README.md) - For running monitored code
 - [Web Data Tools](../web-data/README.md) - For researching issues
+
+
+---
+
+### Azure MCP Server
+
+⭐ ~2.4K Stars | 🔗 [GitHub](https://github.com/Azure/azure-mcp)
+
+**Description**: Microsoft's official MCP server for unified access to Azure cloud services. Enables AI agents to manage Azure resources, deploy applications, and automate cloud operations through natural language.
+
+**Key Features**:
+- Unified access to all Azure services
+- Resource management and deployment
+- Natural language cloud operations
+- Integration with Azure DevOps, Functions, Storage, etc.
+- Enterprise-grade security and authentication
+- Official Microsoft support
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "azure": {
+      "command": "npx",
+      "args": ["-y", "@azure/mcp-server"],
+      "env": {
+        "AZURE_SUBSCRIPTION_ID": "your_subscription_id",
+        "AZURE_TENANT_ID": "your_tenant_id"
+      }
+    }
+  }
+}
+```
+
+---
+
+### PostgreSQL MCP
+
+⭐ Official MCP Server | 🔗 [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres)
+
+**Description**: Official MCP server for PostgreSQL database operations. Enables AI agents to query databases, analyze schemas, and execute SQL through natural language.
+
+**Key Features**:
+- Direct database query execution
+- Schema introspection and analysis
+- Table and column exploration
+- SQL generation from natural language
+- Read-only and read-write modes
+- Connection pooling support
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "postgres": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres"],
+      "env": {
+        "DATABASE_URL": "postgresql://user:pass@localhost:5432/mydb"
+      }
+    }
+  }
+}
+```
+
+---
