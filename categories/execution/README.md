@@ -133,6 +133,64 @@ def hello():
 
 ---
 
+### Herdr
+
+⭐ ~11K Stars | 🔗 [GitHub](https://github.com/ogulcancelik/herdr)
+
+**Description**: Terminal multiplexer designed specifically for AI agents, similar to tmux but rebuilt from the ground up. Each agent gets its own real terminal with sidebar showing blocked/working/done status.
+
+**Key Features**:
+- Agent-optimized terminal multiplexing
+- Real-time status sidebar
+- Session persistence across disconnections
+- Auto-detection for Claude Code, Codex, Cursor, Copilot, and 20+ agents
+- Single ~10MB Rust binary, no GUI, no Electron, no telemetry
+- Windows beta available (v0.7.1 released June 2026)
+- Server mode for background session persistence
+
+**Installation**:
+```bash
+# npm
+npm install -g herdr
+
+# Or download from GitHub releases
+```
+
+---
+
+### Secure CLI MCP
+
+⭐ Security-Focused | 🔗 [GitHub](https://github.com/MladenSU/safe-cli-mcp)
+
+**Description**: Secure CLI MCP server with comprehensive security features including command whitelisting, path validation, and execution controls. Prevents shell operator injection and path traversal attacks.
+
+**Key Features**:
+- Command whitelist configuration
+- Path validation and restriction
+- Shell injection prevention
+- Execution timeout limits
+- Detailed error reporting
+- Async operation support
+- Working directory restriction
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "secure-cli": {
+      "command": "npx",
+      "args": ["-y", "safe-cli-mcp"],
+      "env": {
+        "ALLOWED_DIR": "/workspace",
+        "ALLOWED_COMMANDS": "git,npm,node"
+      }
+    }
+  }
+}
+```
+
+---
+
 ## Choosing an Execution Tool
 
 | Tool | Use Case | Latency | Cost | Security |

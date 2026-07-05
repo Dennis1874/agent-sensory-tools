@@ -193,6 +193,26 @@ agent-browser install --with-deps
 
 ---
 
+### Safari MCP Server
+
+⭐ Apple Official | 🔗 [WebKit Blog](https://webkit.org/)
+
+**Description**: Apple's official MCP server for Safari Technology Preview, enabling coding agents to directly inspect and debug websites. Access page content, console logs, network requests, screenshots, and interact with page elements.
+
+**Key Features**:
+- Direct browser inspection for AI agents
+- Console log access and debugging
+- Network request monitoring
+- Screenshot capture
+- Page interaction (click, input, scroll)
+- Safari compatibility issue detection
+- Performance analysis and accessibility checking
+
+**Installation**:
+Available in Safari Technology Preview 247+. Enable through Safari preferences under Develop > MCP Server.
+
+---
+
 ### Screenshot MCP
 
 ⭐ N/A | 🔗 [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/screenshot)

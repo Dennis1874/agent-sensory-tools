@@ -188,6 +188,74 @@ yarn workspace @memory-bank/mcp start --docs /path/to/your/docs
 
 ---
 
+### Datadog MCP Server
+
+⭐ Monitoring Integration | 🔗 [GitHub](https://github.com/winor30/datadog-mcp)
+
+**Description**: MCP server for Datadog API integration. Provides seamless management of events, monitors, logs, dashboards, metrics, traces, and hosts with extensible design for future API expansions.
+
+**Key Features**:
+- Event tracking and management
+- Monitor status queries
+- Log search and retrieval
+- Dashboard listing and details
+- Metrics querying
+- APM trace access
+- Host management and muting
+- Scalable architecture for additional APIs
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "datadog": {
+      "command": "npx",
+      "args": ["-y", "@datadog/mcp"],
+      "env": {
+        "DATADOG_API_KEY": "your_api_key",
+        "DATADOG_APP_KEY": "your_app_key"
+      }
+    }
+  }
+}
+```
+
+---
+
+### Azure DevOps MCP Server
+
+⭐ DevOps Integration | 🔗 [GitHub](https://github.com/Tiberriver256/azure-devops-mcp)
+
+**Description**: MCP server enabling AI assistants to interact with Azure DevOps resources through a standardized protocol. Supports projects, work items, repositories, pull requests, branches, and pipelines.
+
+**Key Features**:
+- Project management
+- Work item creation and updates
+- Repository access
+- Pull request operations
+- Branch management
+- Pipeline control
+- Natural language DevOps workflows
+- Secure authentication with PAT
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "azure-devops": {
+      "command": "npx",
+      "args": ["-y", "azure-devops-mcp"],
+      "env": {
+        "AZURE_DEVOPS_ORG_URL": "https://dev.azure.com/yourorg",
+        "AZURE_DEVOPS_PAT": "your_personal_access_token"
+      }
+    }
+  }
+}
+```
+
+---
+
 ## Monitoring Workflow Example
 
 ```
