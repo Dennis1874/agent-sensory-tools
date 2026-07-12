@@ -199,6 +199,43 @@ npm install -g herdr
 | Modal | Production workloads | Low | Pay-per-use | High |
 | Shell MCP | Local development | Very Low | Free | Medium |
 | Docker MCP | Containerized tasks | Low | Infrastructure cost | High |
+| Microsoft MXC | OS-level agent sandbox | Very Low | Free | Very High |
+
+---
+
+### Microsoft MXC (Execution Containers)
+
+⭐ Microsoft Official | 🔗 [GitHub](https://github.com/microsoft/mxc)
+
+**Description**: Cross-platform SDK for OS-level agent sandboxing. Defines what AI agents can access through JSON policies, enforced by the operating system at runtime. Used by GitHub Copilot CLI for constraining dynamically generated code.
+
+**Key Features**:
+- Cross-platform: Windows (ProcessContainer), Linux (Bubblewrap/LXC), macOS (Seatbelt)
+- Policy-driven isolation via JSON configuration
+- Filesystem, network, and UI access policies
+- Session isolation with separate agent identity
+- Enterprise integration via Intune/Entra
+- TypeScript SDK: `@microsoft/mxc-sdk`
+- Multiple backends: process sandbox → micro-VM → full VM
+
+**Installation**:
+```bash
+npm install @microsoft/mxc-sdk
+```
+
+```typescript
+import { spawnSandboxFromConfig, createConfigFromPolicy } from '@microsoft/mxc-sdk';
+
+const config = createConfigFromPolicy({
+  version: '0.6.0-alpha',
+  filesystem: {
+    readonlyPaths: ['/tools', '/libs'],
+    readwritePaths: ['/tmp', '/workspace'],
+  },
+  network: { allowOutbound: false },
+  timeoutMs: 30_000,
+});
+```
 
 ---
 

@@ -252,6 +252,59 @@ Available in Safari Technology Preview 247+. Enable through Safari preferences u
 | agent-browser | High-performance CLI | Chrome | Medium |
 | Sharp MCP | Image processing | N/A | Low |
 | Screenshot MCP | Quick captures | Chrome | Very Low |
+| Actionbook MCP | Authenticated sessions | Chrome Extension | Low |
+| PyMCPAutoGUI | Desktop GUI automation | N/A (Desktop) | Medium |
+
+---
+
+### Actionbook MCP
+
+⭐ Chrome Extension | 🔗 [Actionbook](https://actionbook.so)
+
+**Description**: Chrome extension that connects AI assistants to your real browser. Uses your actual logged-in sessions, so AI can interact with websites that require authentication without needing separate credentials.
+
+**Key Features**:
+- Uses your real browser with your logged-in sessions
+- AI can click, fill forms, navigate, and submit on your behalf
+- Multi-tab support for parallel information gathering
+- Read current page content without screenshots
+- Works with any MCP-compatible client (Claude, Cursor, etc.)
+- Human-in-the-loop: you can see and intervene at any time
+
+**Installation**:
+```bash
+# Install Chrome extension from Actionbook website
+# Then configure MCP:
+{
+  "mcpServers": {
+    "actionbook": {
+      "command": "npx",
+      "args": ["-y", "@actionbook/mcp"]
+    }
+  }
+}
+```
+
+---
+
+### PyMCPAutoGUI
+
+⭐ GUI Automation | 🔗 [GitHub](https://github.com/nicekid1/PyMCPAutoGUI)
+
+**Description**: GUI automation tool for AI agents via MCP protocol. Provides mouse/keyboard control, screenshot capture, and window management capabilities for desktop automation workflows.
+
+**Key Features**:
+- Mouse and keyboard control for AI agents
+- Screenshot capture and analysis
+- Window management (move, resize, focus)
+- Screen coordinate-based automation
+- Seamless MCP integration with Cursor and other editors
+- Python-based, easy to extend
+
+**Installation**:
+```bash
+pip install pymcpautogui
+```
 
 ---
 

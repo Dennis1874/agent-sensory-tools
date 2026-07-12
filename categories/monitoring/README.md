@@ -256,6 +256,73 @@ yarn workspace @memory-bank/mcp start --docs /path/to/your/docs
 
 ---
 
+### Firefly MCP Server
+
+⭐ CloudOps MCP | 🔗 [Firefly](https://www.firefly.ai) | 🔗 [Docs](https://docs.firefly.ai/integrations/mcp)
+
+**Description**: MCP server for cloud infrastructure management. Enables AI agents to discover, manage, and codify cloud and SaaS resources using natural language. Integrates with Cursor and Claude for context-aware CloudOps.
+
+**Key Features**:
+- Discover all resources across connected cloud accounts
+- Codify resources into Infrastructure as Code
+- Query cloud state in real-time
+- Drift detection and automated remediation
+- Support for Kubernetes, IAM, SaaS, and more
+- NPX plug-and-play setup
+- Works with any MCP-compatible agent
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "firefly": {
+      "command": "npx",
+      "args": ["-y", "@fireflyai/firefly-mcp"],
+      "env": {
+        "FIREFLY_ACCESS_KEY": "your_access_key",
+        "FIREFLY_SECRET_KEY": "your_secret_key"
+      }
+    }
+  }
+}
+```
+
+---
+
+### Azure SRE Agent MCP Tools
+
+⭐ Microsoft Official | 🔗 [Microsoft Learn](https://learn.microsoft.com/en-au/azure/developer/azure-mcp-server/tools/azure-sre-agent)
+
+**Description**: MCP tools for Azure SRE Agent — an AI-powered reliability assistant that helps teams diagnose and resolve production issues. Provides 50+ tools covering subagents, incidents, scheduled tasks, workflows, hooks, skills, and PagerDuty/ServiceNow integration.
+
+**Key Features**:
+- AI-powered incident diagnosis and resolution
+- Subagent creation and management
+- PagerDuty and ServiceNow connector support
+- Scheduled task management
+- Workflow generation and deployment
+- Knowledge base documentation management
+- Hook-based event automation
+- Natural language SRE operations
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "azure-sre": {
+      "command": "npx",
+      "args": ["-y", "@azure/mcp-server-sre"],
+      "env": {
+        "AZURE_SUBSCRIPTION_ID": "your_subscription_id",
+        "AZURE_TENANT_ID": "your_tenant_id"
+      }
+    }
+  }
+}
+```
+
+---
+
 ## Monitoring Workflow Example
 
 ```

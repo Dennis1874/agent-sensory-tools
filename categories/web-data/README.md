@@ -171,6 +171,31 @@ JIRA_API_TOKEN=your_token
 | Fetch | Simple requests | Raw/JSON | ❌ No |
 | All-in-One MCP | Multi-service integration | Various | Depends on service |
 | Tavily | AI RAG workflows | Structured JSON | N/A |
+| Webclone | Website cloning | HTML/Assets | ✅ Yes |
+
+---
+
+### Webclone
+
+⭐ Async Python | 🔗 [GitHub](https://github.com/nicekid1/webclone)
+
+**Description**: Ultra-fast website cloning tool built on async Python, designed for AI agent integration. Supports JavaScript rendering, authentication bypass, and provides both desktop GUI and CLI interfaces.
+
+**Key Features**:
+- Extremely fast async website cloning
+- JavaScript rendering support for SPAs
+- Authentication bypass for protected pages
+- AI agent integration via API
+- Desktop GUI and command-line interface
+- Full page asset preservation
+
+**Installation**:
+```bash
+pip install webclone
+
+# CLI usage
+webclone clone https://example.com -o output_dir
+```
 
 ---
 
