@@ -280,3 +280,68 @@ npm install -g cc-switch
 ```
 
 ---
+
+---
+
+### just-bash-mcp
+
+⭐ New Release v3.1 | 🔗 [GitHub](https://www.npmjs.com/package/just-bash-mcp)
+
+**Description**: Sandboxed bash environment MCP server for AI agents. Executes bash commands in a secure, isolated in-memory virtual filesystem with defense-in-depth security, Python support, and comprehensive upstream command compatibility.
+
+**Key Features**:
+- Sandboxed execution in isolated virtual filesystem
+- Defense-in-depth mode with monkey-patching of dangerous JS globals
+- Python3 support via upstream emscripten CPython runtime
+- Stateless & stateful modes (isolated or persistent filesystem)
+- OverlayFS/MountableFS/ReadWriteFS support for real directory mounting
+- Network access control with URL allow-lists
+- Execution limits: protection against infinite loops and deep recursion
+- Byte-safe stdin handling and file IO
+- AST transform tool for bash pipeline analysis
+- Full upstream exec options: cwd, env, stdin, timeout, args
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "just-bash": {
+      "command": "npx",
+      "args": ["-y", "just-bash-mcp"]
+    }
+  }
+}
+```
+
+---
+
+### Desktop Commander MCP
+
+⭐ 8.2K+ Stars | 🔗 [GitHub](https://github.com/wonderwhy-er/DesktopCommanderMCP)
+
+**Description**: Full-featured MCP server providing terminal control, file system search, diff-based code editing, and process management for AI agents. GitHub Trending #1 in July 2026. Goes beyond basic file system access to become a desktop automation runtime.
+
+**Key Features**:
+- Terminal control with background execution and streaming output
+- File system search with glob patterns and content search
+- Diff-based line editing (not full file replacement)
+- Process management: list, kill, monitor running processes
+- SSH, database, and development server process management
+- Office/PDF document processing (Excel, DOCX, PDF)
+- MCP Resources for file preview and configuration UI
+- Remote MCP support (mcp.desktopcommander.app)
+- Pagination for long output reading
+- TypeScript-based, MIT licensed
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "desktop-commander": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/desktop-commander-mcp"]
+    }
+  }
+}
+```
+
