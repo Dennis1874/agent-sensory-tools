@@ -168,3 +168,29 @@ dotnet add package Syncfusion.XlsIO.Net
 
 - [Code Awareness Tools](../code-awareness/README.md) - For code file handling
 - [Execution Tools](../execution/README.md) - For running scripts that process files
+
+---
+
+### TX Text Control MCP Document Server
+
+⭐ Active Open Source | 🔗 [GitHub](https://github.com/TextControl/TXTextControl.MCPDocumentServer)
+
+**Description**: AI-powered document generation MCP server using TX Text Control as the deterministic engine. AI agents translate natural language prompts into structured tool calls for creating professional DOCX, PDF documents with tables, styles, merge fields, and more.
+
+**Key Features**:
+- Natural language document creation ("create an invoice template")
+- Deterministic document processing: layout, styles, tables, merge fields
+- Export to DOCX, PDF, HTML, plain text
+- Template merging with structured data
+- Form field manipulation and document inspection
+- AI as interface + document engine as backend pattern
+- ASP.NET Core based, enterprise-ready
+
+**Installation**:
+```bash
+# Clone and run the ASP.NET Core MCP server
+git clone https://github.com/TextControl/TXTextControl.MCPDocumentServer.git
+cd TXTextControl.MCPDocumentServer
+dotnet run
+```
+
