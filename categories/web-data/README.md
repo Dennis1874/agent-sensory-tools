@@ -248,3 +248,66 @@ headroom proxy --port 8787
 ```
 
 ---
+
+---
+
+### Apify MCP Server
+
+⭐ 4K+ Stars | 🔗 [GitHub](https://github.com/apify/apify-mcp-server)
+
+**Description**: MCP server connecting AI agents to 8,000+ Apify Actors for web scraping, crawling, and automation. Covers social media, search engines, maps, e-commerce, and any website. Supports OAuth, agentic payments via x402/Skyfire.
+
+**Key Features**:
+- Access to 8,000+ ready-made scrapers and crawlers (Apify Store)
+- Social media data extraction (Facebook, Instagram, Google Maps)
+- Hosted server with OAuth support (mcp.apify.com)
+- Agentic payments: AI agents pay for runs with USDC via x402 or Skyfire
+- Dynamic tool discovery - any Actor becomes a tool automatically
+- Structured output with schema inference
+- Streamable HTTP transport (replaced legacy SSE)
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "apify": {
+      "command": "npx",
+      "args": ["-y", "@apify/actors-mcp-server"],
+      "env": {
+        "APIFY_TOKEN": "your_api_token"
+      }
+    }
+  }
+}
+```
+
+---
+
+### WET-MCP (Web Extended Toolkit)
+
+⭐ 15+ Stars | 🔗 [GitHub](https://github.com/n24q02m/wet-mcp)
+
+**Description**: All-in-one MCP server for web search, content extraction, crawling, academic research, and library docs. Built with embedded SearXNG, 5-strategy scraping escalation, and zero API key requirement.
+
+**Key Features**:
+- Web Search via embedded SearXNG (Google, Bing, DuckDuckGo, Brave)
+- Academic Research: Google Scholar, Semantic Scholar, arXiv, PubMed, CrossRef
+- Library Docs: Auto-discover and index documentation with FTS5 hybrid search
+- 5-strategy scraping chain: basic_http → tls_spoof → render → captcha bypass
+- Anti-bot stealth: bypasses Cloudflare, Medium, LinkedIn, Twitter
+- Zero config: Built-in local Qwen3 embedding + reranking, no API keys needed
+- Local file conversion: PDF, DOCX, XLSX, CSV, HTML, EPUB, PPTX to Markdown
+- Deep crawling and site mapping
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "wet": {
+      "command": "uvx",
+      "args": ["wet-mcp"]
+    }
+  }
+}
+```
+
