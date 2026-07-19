@@ -410,3 +410,39 @@ yarn workspace @memory-bank/mcp start --docs /path/to/your/docs
 ```
 
 ---
+
+---
+
+### Dynatrace MCP Server
+
+⭐ Official | 🔗 [GitHub](https://github.com/dynatrace-oss/dynatrace-mcp-server)
+
+**Description**: Official MCP server for Dynatrace observability platform. Enables AI agents to query metrics, analyze problems, explore distributed traces, and manage Dynatrace configurations using natural language.
+
+**Key Features**:
+- Query DQL (Dynatrace Query Language) via natural language
+- Problem analysis and root cause detection
+- Distributed trace exploration
+- Metric ingestion and querying
+- Entity discovery and topology mapping
+- Event management and alerting
+- Dashboard and notebook management
+- Official Dynatrace OSS maintenance
+- Streamable HTTP and stdio transport support
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "dynatrace": {
+      "command": "npx",
+      "args": ["-y", "@dynatrace-oss/dynatrace-mcp-server"],
+      "env": {
+        "DYNATRACE_URL": "https://your-env.dynatrace.com",
+        "DYNATRACE_API_TOKEN": "your_api_token"
+      }
+    }
+  }
+}
+```
+
