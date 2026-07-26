@@ -254,6 +254,8 @@ Available in Safari Technology Preview 247+. Enable through Safari preferences u
 | Screenshot MCP | Quick captures | Chrome | Very Low |
 | Actionbook MCP | Authenticated sessions | Chrome Extension | Low |
 | PyMCPAutoGUI | Desktop GUI automation | N/A (Desktop) | Medium |
+| Stealth Browser MCP | Anti-bot stealth browsing | Chrome (via Playwright) | Medium |
+| Vessel Browser | AI-native agent browser | Chromium (custom) | Medium |
 
 ---
 
@@ -312,3 +314,55 @@ pip install pymcpautogui
 
 - [Web Data Tools](../web-data/README.md) - For fetching and parsing web content
 - [Execution Tools](../execution/README.md) - For running scripts that interact with browsers
+
+### Stealth Browser MCP
+
+⭐ Trending | 🔗 [GitHub](https://github.com/vibheksoni/stealth-browser-mcp)
+
+**Description**: Anti-bot browser automation MCP server using Playwright with stealth plugins. Bypasses Cloudflare, DataDome, and other bot detection systems while providing full browser automation capabilities to AI agents.
+
+**Key Features**:
+- Anti-detection via puppeteer-extra-plugin-stealth and playwright-extra
+- Browser fingerprint modification (WebGL, canvas, fonts, plugins)
+- Full-page and element-specific screenshots
+- Headless and headed browser modes
+- MCP protocol integration via FastMCP
+- Bypasses common bot detection systems
+
+**Installation**:
+```bash
+# Install dependencies
+bun install
+
+# Run the MCP server
+bun start
+```
+
+---
+
+### Vessel Browser
+
+⭐ Open Source AI Browser | 🔗 [GitHub](https://github.com/unmodeled-tyler/vessel-browser)
+
+**Description**: Open-source AI-native browser built from the ground up for agents. Provides durable state management, MCP control, and BYOK (Bring Your Own Key) with full autonomous browsing across Linux, macOS, and Windows. Compatible with Hermes Agent, OpenClaw, and any MCP client.
+
+**Key Features**:
+- Built specifically for AI agent control, not human browsing
+- Durable session state across restarts
+- Full MCP server for agent-driven navigation
+- BYOK model support — connect any LLM provider
+- Cross-platform: Linux, macOS, Windows
+- Human-in-the-loop supervision mode
+- Autonomous browsing with guardrails
+
+**Installation**:
+```bash
+# npm
+npm install @quanta-intellect/vessel-browser
+
+# Or clone and build
+git clone https://github.com/unmodeled-tyler/vessel-browser.git
+cd vessel-browser && npm install && npm start
+```
+
+---

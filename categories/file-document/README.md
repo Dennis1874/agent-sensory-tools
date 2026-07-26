@@ -161,6 +161,7 @@ dotnet add package Syncfusion.XlsIO.Net
 | Unstructured MCP | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Anthropic PDF Skill | ✅ | ❌ | ❌ | ❌ | ✅ |
 | Syncfusion | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Talonic MCP | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 ---
 
@@ -194,3 +195,34 @@ cd TXTextControl.MCPDocumentServer
 dotnet run
 ```
 
+
+### Talonic MCP
+
+⭐ Production-Ready | 🔗 [GitHub](https://github.com/talonicdev/talonic-mcp) | 🔗 [NPM](https://www.npmjs.com/package/@talonic/mcp)
+
+**Description**: Enterprise-grade document extraction MCP server. Extracts structured, schema-validated JSON data from any document — PDFs, scans, invoices, contracts, forms — with per-field confidence scores. Also supports OCR to Markdown and omnisearch across documents.
+
+**Key Features**:
+- Schema-validated JSON extraction with confidence scores
+- OCR to clean Markdown conversion
+- Omni-search across documents, fields, sources, and schemas
+- Document filtering by extracted field values
+- Browser upload support for large files
+- Dual transport: stdio (local) and Streamable HTTP (hosted)
+- Listed on official MCP Registry
+- 11 tools and 2 resources
+- Compatible with Claude.ai hosted connector
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "talonic": {
+      "command": "npx",
+      "args": ["-y", "@talonic/mcp"]
+    }
+  }
+}
+```
+
+---

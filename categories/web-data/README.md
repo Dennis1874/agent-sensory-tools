@@ -311,3 +311,105 @@ headroom proxy --port 8787
 }
 ```
 
+
+### Google Workspace MCP
+
+⭐ ~2,875 Stars | 🔗 [GitHub](https://github.com/nicoritschel/google-workspace-mcp)
+
+**Description**: Comprehensive MCP server for Google Workspace integration. Enables AI agents to control Gmail, Google Calendar, Google Docs, Sheets, Slides, Chat, Forms, Tasks, Search, and Drive — all through a single unified MCP server.
+
+**Key Features**:
+- Gmail: read, send, search, label, and manage emails
+- Google Calendar: create, update, delete events and manage schedules
+- Google Docs: read and create documents
+- Google Sheets: read, write, and manipulate spreadsheets
+- Google Slides: create and manage presentations
+- Google Chat: send and read messages
+- Google Forms: create and manage forms
+- Google Tasks: manage task lists and todos
+- Google Drive: search, upload, download files
+- Google Search: perform web searches via Google
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "google-workspace": {
+      "command": "npx",
+      "args": ["-y", "google-workspace-mcp"],
+      "env": {
+        "GOOGLE_CLIENT_ID": "your_client_id",
+        "GOOGLE_CLIENT_SECRET": "your_client_secret",
+        "GOOGLE_REFRESH_TOKEN": "your_refresh_token"
+      }
+    }
+  }
+}
+```
+
+---
+
+### NotebookLM MCP
+
+⭐ ~3,041 Stars | 🔗 [GitHub](https://github.com/jacob-bd/notebooklm-mcp-cli)
+
+**Description**: Unified CLI and MCP server for Google NotebookLM. Lets AI agents (Claude Code, Codex, Cursor) research documentation directly with grounded, citation-backed answers from your NotebookLM knowledge base. Supports persistent auth, library management, and cross-client sharing.
+
+**Key Features**:
+- 40 MCP tools for full NotebookLM control
+- Create, manage, and query notebooks
+- Add sources (URLs, PDFs, YouTube, Google Drive)
+- Retrieve citation-backed answers with zero hallucinations
+- Bulk artifact download from Studio
+- Persistent authentication across sessions
+- CLI and MCP dual interface
+- Compatible with Claude Desktop, Codex, Cursor
+
+**Installation**:
+```bash
+pip install notebooklm-mcp-cli
+```
+```json
+{
+  "mcpServers": {
+    "notebooklm-mcp": {
+      "command": "notebooklm-mcp",
+      "args": []
+    }
+  }
+}
+```
+
+---
+
+### Markdownify MCP
+
+⭐ ~2,886 Stars | 🔗 [GitHub](https://github.com/zcaceres/markdownify-mcp)
+
+**Description**: Universal format-to-Markdown conversion MCP server powered by Microsoft's markitdown. Converts PDFs, images, audio, Excel, Word, YouTube videos, web pages, and more into clean Markdown — making virtually any content digestible by AI agents.
+
+**Key Features**:
+- 11 MCP tools covering all common formats
+- PDF to Markdown extraction
+- YouTube transcript extraction
+- Bing search results to Markdown
+- Image analysis and description
+- Audio transcription to text
+- Excel/CSV to Markdown tables
+- Web page to Markdown conversion
+- Word/PowerPoint document conversion
+- Powered by Microsoft markitdown engine
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "markdownify": {
+      "command": "npx",
+      "args": ["-y", "markdownify-mcp"]
+    }
+  }
+}
+```
+
+---

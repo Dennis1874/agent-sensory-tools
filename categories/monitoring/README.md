@@ -446,3 +446,39 @@ yarn workspace @memory-bank/mcp start --docs /path/to/your/docs
 }
 ```
 
+
+### MCP Memory Service
+
+⭐ Production/Stable | 🔗 [GitHub](https://codeberg.org/doobiboo/mcp-memory-service) | 🔗 [PyPI](https://pypi.org/project/mcp-memory-service/)
+
+**Description**: Persistent shared memory backend for AI agent pipelines. Provides REST API, MCP, OAuth, CLI, and dashboard in one self-hosted service. Agents store decisions, share causal knowledge graphs, and retrieve context in 5ms — without cloud lock-in or API costs.
+
+**Key Features**:
+- Multiple transports: REST API, MCP, OAuth, CLI, dashboard
+- Causal knowledge graphs with 3D visualization
+- 5ms context retrieval with semantic search
+- Multiple storage backends: SQLite, Cloudflare, Hybrid, Milvus
+- Cross-agent memory sharing
+- Works with LangGraph, CrewAI, AutoGen, Claude Desktop, OpenCode
+- Self-hosted with no cloud lock-in
+- Agent pipeline integration (decisions, context, patterns)
+- OAuth authentication for multi-user setups
+
+**Installation**:
+```bash
+git clone https://codeberg.org/doobiboo/mcp-memory-service.git
+cd mcp-memory-service
+python scripts/installation/install.py
+```
+```json
+{
+  "mcpServers": {
+    "mcp-memory": {
+      "command": "python",
+      "args": ["-m", "mcp_memory_service"]
+    }
+  }
+}
+```
+
+---

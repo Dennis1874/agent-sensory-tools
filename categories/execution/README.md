@@ -345,3 +345,31 @@ npm install -g cc-switch
 }
 ```
 
+
+### OpenWorker
+
+⭐ ~3,700 Stars | 🔗 [GitHub](https://github.com/andrewyng/openworker)
+
+**Description**: Andrew Ng's open-source desktop AI agent that delivers finished work, not chat. MIT-licensed, local-first, model-agnostic. Runs multi-step workflows across local files, connected apps (25+ integrations), and the terminal — returning documents, calendar changes, Slack messages, and more.
+
+**Key Features**:
+- Delivers finished work products (documents, reports, messages), not just chat
+- Local-first architecture: all data stays on your machine
+- Model-agnostic: supports OpenAI, Anthropic, Gemini, open-weight models, Ollama
+- 25+ hosted integrations: GitHub, Slack, Jira, Notion, Google Calendar
+- MCP protocol support for extensibility
+- Typed risk engine for safe autonomous operation (Read/Write_local/Exec/External)
+- Human-in-the-loop approval before consequential actions
+- Tauri 2 desktop shell with React 18 UI
+- Built on aisuite (Andrew Ng's provider-agnostic LLM library)
+
+**Installation**:
+```bash
+# macOS: Download from GitHub releases
+# Windows: Coming soon
+git clone https://github.com/andrewyng/openworker.git
+cd openworker
+# Follow setup instructions in README
+```
+
+---
