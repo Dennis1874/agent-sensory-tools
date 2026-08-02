@@ -482,3 +482,33 @@ python scripts/installation/install.py
 ```
 
 ---
+
+### Apache Doris MCP Server
+
+⭐ Apache Official | 🔗 [GitHub](https://github.com/apache/doris-mcp-server)
+
+**Description**: Apache Doris MCP Server 1.0.0 — the first GA release exposing Apache Doris analytics capabilities to AI agents via MCP. Uses a capability-aware, two-level architecture with 8 stable top-level domains and 47 child capabilities. Progressive discovery with bounded manifests, runtime version/feature detection, and deterministic schemas. Built on MCP 2026-07-28 protocol (stateless).
+
+**Key Features**:
+- Two-level capability architecture: 8 domains, 47 child tools
+- Progressive discovery with bounded manifests
+- Runtime Doris version, feature, and permission detection
+- Read-only query execution with safety guardrails
+- Supports Streamable HTTP and stdio transports
+- MCP 2026-07-28 protocol (stateless, self-contained requests)
+- OAuth authentication and authorization enforcement
+- Deterministic schemas and error envelopes
+- Fail-closed query, transport, and capability boundaries
+
+**Installation**:
+```bash
+pip install doris-mcp-server
+
+# Run in stdio mode
+doris-mcp-server --transport stdio --db-host localhost --db-port 9030
+
+# Or HTTP mode
+doris-mcp-server --transport http --host 127.0.0.1 --port 3000 --db-host localhost --db-port 9030
+```
+
+---

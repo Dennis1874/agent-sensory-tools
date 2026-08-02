@@ -256,6 +256,9 @@ Available in Safari Technology Preview 247+. Enable through Safari preferences u
 | PyMCPAutoGUI | Desktop GUI automation | N/A (Desktop) | Medium |
 | Stealth Browser MCP | Anti-bot stealth browsing | Chrome (via Playwright) | Medium |
 | Vessel Browser | AI-native agent browser | Chromium (custom) | Medium |
+| MCPBrowser | AI-first clean HTML extraction | Chrome/Edge/Brave | Low |
+| Azure Foundry Browser | Enterprise cloud browser automation | Playwright (Azure) | Medium |
+| Windows 365 for Agents | Full cloud PC control | Edge (Windows 365) | High |
 
 ---
 
@@ -363,6 +366,96 @@ npm install @quanta-intellect/vessel-browser
 # Or clone and build
 git clone https://github.com/unmodeled-tyler/vessel-browser.git
 cd vessel-browser && npm install && npm start
+```
+
+---
+
+### MCPBrowser
+
+⭐ AI-First Browser MCP | 🔗 [GitHub/npm](https://www.npmjs.com/package/mcpbrowser)
+
+**Description**: AI-optimized browser MCP server built specifically for AI agents. Uses Puppeteer under the hood but adds an intelligence layer: clean HTML output (90% smaller), automatic SPA detection (React, Vue, Angular), authentication flow handling (SSO, redirects, multi-step login), form discovery with multi-field filling, and domain-based tab reuse. Each tool call replaces 5-8 raw Puppeteer/Playwright calls.
+
+**Key Features**:
+- Clean LLM-optimized HTML output (~90% smaller than raw DOM)
+- Auto-detects React, Vue, Angular, Svelte, Next.js, Nuxt with framework-aware wait strategies
+- Detects login pages, SSO redirects, multi-step auth flows automatically
+- Form discovery: `browser_detect_forms` finds all fields, labels, constraints
+- Instant DOM re-extraction without page reloads (10-50x faster)
+- Plugin system with site-specific actions and confidence scoring
+- Works with Chrome, Edge, or Brave browsers
+- VS Code extension available
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "mcpbrowser": {
+      "command": "npx",
+      "args": ["-y", "mcpbrowser"]
+    }
+  }
+}
+```
+
+---
+
+### Azure Foundry Browser Automation
+
+⭐ Microsoft Official | 🔗 [Microsoft Learn](https://learn.microsoft.com/en-in/Azure/foundry/agents/how-to/tools/browser-automation)
+
+**Description**: Microsoft's Browser Automation Preview Tool for Azure AI Foundry agents. Provides Playwright-based browser automation capabilities to AI agents running in Azure. Supports navigation, page content reading, element interaction, and screenshot capture — all through the Agent 365 Tooling Gateway with enterprise-grade security and governance.
+
+**Key Features**:
+- Playwright-based browser automation in Azure cloud
+- Navigate, click, type, fill forms, read page content
+- Screenshot capture for visual verification
+- Integration with Azure AI Foundry agent framework
+- MCP-compatible endpoint via Agent 365 Toolbox
+- Enterprise security via Azure Entra authentication
+- Supports both Python and C# SDKs
+
+**Installation**:
+```python
+from azure.ai.projects import AIProjectClient
+from azure.ai.projects.tools import BrowserAutomationPreviewTool
+
+tool = BrowserAutomationPreviewTool(
+    browser_automation_preview=BrowserAutomationToolParameters(
+        connection=BrowserAutomationToolConnectionParameters(
+            project_connection_id=BROWSER_CONNECTION_ID,
+        )
+    )
+)
+```
+
+---
+
+### Windows 365 for Agents MCP Server
+
+⭐ Microsoft Official | 🔗 [Microsoft Learn](https://learn.microsoft.com/microsoft-copilot-studio/mcp-windows-365-agents-work-iq)
+
+**Description**: Microsoft's MCP server providing full operational control of a Windows 365 cloud PC for AI agents. Combines desktop interaction (mouse, keyboard, screenshots), Edge browser automation, and Windows UI Automation semantic inspection — giving agents a complete Windows environment to operate in.
+
+**Key Features**:
+- Full desktop interaction: mouse, keyboard, screenshot, command execution
+- Edge browser automation: navigate, click, type, fill forms, multi-tab management
+- Windows UI Automation tree inspection for semantic element discovery
+- Sandboxed shell command execution with allowlist (git, npm, dotnet, python, etc.)
+- Accessibility-based element targeting via UI Automation
+- Batch browser actions in a single call
+- Cookie inspection and page PDF export
+- Enterprise security via Microsoft 365 admin center
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "windows365": {
+      "url": "https://agent365.svc.cloud.microsoft/agents/tenants/{tenantId}/servers/mcp_W365ComputerUse"
+    }
+  }
+}
 ```
 
 ---

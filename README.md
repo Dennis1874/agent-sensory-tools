@@ -12,14 +12,14 @@ This repository catalogs tools built on the **Model Context Protocol (MCP)** and
 
 | Category | Emoji | Description | Tools |
 |----------|-------|-------------|-------|
-| [Vision](categories/vision/README.md) | 👁️ | Browser automation, screenshot capture, image processing | 13 |
+| [Vision](categories/vision/README.md) | 👁️ | Browser automation, screenshot capture, image processing | 16 |
 | [Code Awareness](categories/code-awareness/README.md) | 🧠 | Code search, knowledge graphs, documentation lookup | 5 |
 | [Web Data](categories/web-data/README.md) | 🌐 | Web scraping, search APIs, content fetching | 12 |
 | [File & Document](categories/file-document/README.md) | 📄 | File system access, PDF parsing, document processing | 7 |
-| [Execution](categories/execution/README.md) | ⚡ | Sandboxed code execution, cloud functions, shell commands | 11 |
-| [Monitoring](categories/monitoring/README.md) | 📊 | Error tracking, logging, analytics, CI/CD | 14 |
+| [Execution](categories/execution/README.md) | ⚡ | Sandboxed code execution, cloud functions, shell commands | 12 |
+| [Monitoring](categories/monitoring/README.md) | 📊 | Error tracking, logging, analytics, CI/CD | 15 |
 
-**Total: 63 tools**
+**Total: 67 tools**
 
 ## 🔧 What is MCP?
 

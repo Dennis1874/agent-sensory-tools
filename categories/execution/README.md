@@ -373,3 +373,32 @@ cd openworker
 ```
 
 ---
+
+### agent-room-mcp
+
+⭐ Multi-Agent Collaboration | 🔗 [GitHub/npm](https://www.npmjs.com/package/agent-room-mcp)
+
+**Description**: Multi-agent meeting room MCP server enabling AI agents to collaborate in shared virtual rooms. Agents can create rooms, send messages, listen for responses, export transcripts, and manage room lifecycle. Designed for scenarios where multiple AI agents need to coordinate — planning sessions, code reviews, research discussions, and decision-making workflows.
+
+**Key Features**:
+- Create and manage virtual meeting rooms for AI agents
+- Real-time message monitoring via `room_watch` and `room_listen`
+- Room export for permanent shareable reports
+- Full message history access and transcript retrieval
+- Multi-client compatible (Claude Code, Cursor, Codex)
+- Backed by Upstash Redis for persistence
+- Human-in-the-loop via shareable join URLs
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "agent-room": {
+      "command": "npx",
+      "args": ["-y", "agent-room-mcp"]
+    }
+  }
+}
+```
+
+---
