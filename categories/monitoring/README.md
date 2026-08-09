@@ -512,3 +512,70 @@ doris-mcp-server --transport http --host 127.0.0.1 --port 3000 --db-host localho
 ```
 
 ---
+---
+
+### BigFix Platform MCP Server
+
+⭐ Enterprise | 🔗 [BigFix Forum](https://forum.bigfix.com/t/the-bigfix-platform-mcp-server-is-now-available/55245) | 🔗 [Docs](https://bigfix.com/mcp)
+
+**Description**: Enterprise endpoint management MCP server by HCL BigFix. Lets AI assistants retrieve data from BigFix environments and author/run actions on endpoints using natural language. Released August 5, 2026. Built on MCP with streamable HTTP mode over HTTPS, token-based authentication, and security-first design with read-only default and human-in-the-loop protection.
+
+**Key Features**:
+- Action lifecycle management: list, create, retry, stop, delete actions
+- Custom action authoring with LLM assistance
+- Fixlet and Task deployment through action creation
+- Computer listing and detail retrieval
+- Fixlet discovery and detail inspection
+- Session Relevance evaluation via Web Reports/Explorer
+- Read-only by default with explicit write opt-in
+- Human-in-the-loop protection for critical operations
+- Token-based auth forwarded to BigFix REST API
+- TLS support with auto-generated certificates
+- Requires BigFix Platform 11.0.6+
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "bigfix": {
+      "url": "https://your-bigfix-server:52311/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_BIGFIX_API_TOKEN"
+      }
+    }
+  }
+}
+```
+
+---
+
+### Snap Ads MCP Server
+
+⭐ Snap Official | 🔗 [Snap Business Blog](https://forbusiness.snapchat.com/blog/snapchat-ads-mcp)
+
+**Description**: Snapchat's official MCP server for advertising data. Provides an Snap-hosted connection between Snap Ads API and AI agents (Claude, ChatGPT, Gemini). Released August 3, 2026. Advertisers can query campaign performance, trends, and diagnostics using natural language. Organization-level access control with per-agent authorization.
+
+**Key Features**:
+- Official Snap-hosted MCP endpoint (mcp.snapchat.com/ads)
+- Campaign performance queries in natural language
+- Week-over-week trend analysis
+- Diagnostic issue identification
+- 90-day historical pattern analysis
+- OAuth-based authentication
+- Organization-level agent authorization
+- Read-only at launch; write capabilities coming later
+- Per-agent access control granularity
+- Compatible with Claude, ChatGPT, and Gemini
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "snap-ads": {
+      "url": "https://mcp.snapchat.com/ads"
+    }
+  }
+}
+```
+
+---

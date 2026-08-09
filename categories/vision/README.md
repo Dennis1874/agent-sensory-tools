@@ -459,3 +459,43 @@ tool = BrowserAutomationPreviewTool(
 ```
 
 ---
+---
+
+### Page Agent
+
+⭐ ~9,600 Stars | 🔗 [GitHub](https://github.com/alibaba/page-agent)
+
+**Description**: Alibaba's open-source JavaScript in-page GUI agent. Lives directly inside web pages as a `<script>` tag — no headless browser, no screenshots, no Python backend required. Users control web interfaces with natural language. The agent reads DOM structure, assigns indices to interactive elements, and executes clicks, inputs, and navigation via LLM decisions. Includes MCP Server (Beta) for external agent orchestration.
+
+**Key Features**:
+- Pure frontend JavaScript — runs inside the DOM context
+- Natural language web interface control
+- "DOM dehydration" technique: compact text representation of interactive elements
+- No screenshots or multimodal models needed
+- BYOK (Bring Your Own Key): supports OpenAI, Claude, Qwen, DeepSeek, Gemini, Ollama
+- MCP Server (Beta) for external agent control
+- Chrome extension for cross-tab workflows
+- MIT license, model-agnostic
+- Human-in-the-loop with confirmation dialogs
+
+**Installation**:
+```html
+<!-- One-line CDN embed -->
+<script src="https://cdn.jsdelivr.net/npm/page-agent@1.x.x/dist/iife/page-agent.demo.js" crossorigin="true"></script>
+```
+```bash
+# NPM
+npm install page-agent
+
+# MCP Server configuration
+{
+  "mcpServers": {
+    "page-agent": {
+      "command": "npx",
+      "args": ["-y", "page-agent-mcp"]
+    }
+  }
+}
+```
+
+---

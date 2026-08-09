@@ -402,3 +402,37 @@ cd openworker
 ```
 
 ---
+---
+
+### Cloudflare Computer
+
+⭐ Cloudflare Official | 🔗 [GitHub](https://github.com/cloudflare/workers-sdk) | 🔗 [npm](https://www.npmjs.com/package/@cloudflare/computer)
+
+**Description**: Cloudflare's open-source agent runtime providing each AI agent with its own virtual computer. Features a SQLite-backed virtual filesystem (Workspace) with three execution backends: full Linux Container (FUSE mount), Isolate Shell (just-bash in Dynamic Worker), and Isolate JavaScript (ESM modules). Released August 3, 2026. The agent owns the filesystem; containers merely borrow it, execute tasks, and return changes.
+
+**Key Features**:
+- Virtual filesystem on SQLite (Durable Object-backed)
+- Three execution backends: Container (full Linux), Isolate Shell (text tools), Isolate JS (npm modules)
+- Agent-owned state: data survives container crashes
+- FUSE mount via `computerd` daemon for Container backend
+- `capnweb` RPC protocol for efficient state synchronization
+- All operations logged with full audit trail
+- Controlled gateways for security
+- Works with Cloudflare Workers, Durable Objects, and R2
+- Open-source, npm installable
+
+**Installation**:
+```bash
+npm install @cloudflare/computer
+```
+```typescript
+import { Workspace } from "@cloudflare/computer";
+
+export class Agent {
+  workspace = new Workspace({
+    storage: this.ctx.storage,
+  });
+}
+```
+
+---

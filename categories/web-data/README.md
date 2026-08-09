@@ -413,3 +413,37 @@ pip install notebooklm-mcp-cli
 ```
 
 ---
+
+---
+
+### Haystack Intranet MCP Server
+
+⭐ Enterprise Search | 🔗 [PR Newswire](https://www.prnewswire.com/news-releases/haystack-launches-the-intranet-industrys-first-model-context-protocol-mcp-server-302844392.html)
+
+**Description**: The intranet industry's first MCP server, launched by Haystack. Enables AI agents to search and retrieve content from corporate intranets through the Model Context Protocol. Bridges the gap between AI assistants and internal enterprise knowledge bases that are typically inaccessible through public web tools.
+
+**Key Features**:
+- First MCP server purpose-built for intranet content
+- Secure access to internal corporate knowledge
+- Natural language search across intranet sites
+- Enterprise authentication and authorization
+- Compatible with major AI agent platforms
+- Preserves existing intranet permission models
+- Structured content extraction
+- Real-time intranet content indexing
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "haystack-intranet": {
+      "url": "https://mcp.haystacksearch.com/intranet",
+      "headers": {
+        "Authorization": "Bearer YOUR_HAYSTACK_API_KEY"
+      }
+    }
+  }
+}
+```
+
+---

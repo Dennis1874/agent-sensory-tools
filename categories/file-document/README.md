@@ -226,3 +226,34 @@ dotnet run
 ```
 
 ---
+
+---
+
+### Mirage
+
+⭐ Trending | 🔗 [GitHub](https://github.com/strukto-ai/mirage)
+
+**Description**: The world's first unified virtual filesystem for AI agents. Provides a single filesystem abstraction layer that agents can use to access, organize, and manipulate files across multiple backends (local, cloud, sandboxed). Built with Python/Bash/TypeScript, supports FUSE mounting and integrates with LangChain, Claude Code, and OpenClaw ecosystems. Updated August 8, 2026.
+
+**Key Features**:
+- Unified virtual filesystem across multiple storage backends
+- FUSE mount support for shell-level access
+- Agent-optimized file operations and metadata
+- Sandbox isolation for safe file manipulation
+- Integration with LangChain, Claude Code, OpenClaw
+- Cross-backend file synchronization
+- Type-safe file operations with validation
+- Bash, Python, and TypeScript interfaces
+- Designed for multi-agent file collaboration
+
+**Installation**:
+```bash
+# npm
+npm install -g @strukto-ai/mirage
+
+# Or clone and build
+git clone https://github.com/strukto-ai/mirage.git
+cd mirage && pip install -e .
+```
+
+---
