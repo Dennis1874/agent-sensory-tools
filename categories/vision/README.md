@@ -70,6 +70,34 @@ These tools are essential for web scraping, UI testing, visual regression testin
 
 ---
 
+### Agent QA
+
+⭐ 800+ Stars | 🔗 [GitHub](https://github.com/vostride/agent-qa)
+
+**Description**: Natural-language web and mobile regression QA exposed through MCP, with evidence retained for repeatable application-level checks.
+
+**Key Features**:
+- Natural-language regression workflows
+- Screenshots plus DOM, network, and console evidence
+- Persistent test memory across runs
+- Failure triage and retained artifacts
+- CLI and MCP interfaces
+- Source-available under FSL-1.1-ALv2; each release converts to Apache-2.0 after two years
+
+**Installation**:
+```json
+{
+  "mcpServers": {
+    "agent-qa": {
+      "command": "npx",
+      "args": ["-y", "agent-qa", "mcp"]
+    }
+  }
+}
+```
+
+---
+
 ### Browser Use
 
 ⭐ Active Open Source | 🔗 [GitHub](https://github.com/browser-use/browser-use)
@@ -246,6 +274,7 @@ Available in Safari Technology Preview 247+. Enable through Safari preferences u
 |------|----------|-----------------|----------------|
 | Puppeteer MCP | General automation | Chrome only | Low |
 | Playwright MCP | Cross-browser testing | All major | Medium |
+| Agent QA | Regression QA with retained evidence | Web and mobile | Medium |
 | Browser Use | AI agent workflows | Chrome | Low |
 | stagehand | Vision-based AI | Cloud browsers | Low |
 | Chrome DevTools MCP | Debugging & inspection | Chrome | Low |
