@@ -18,6 +18,35 @@ These tools are essential for incident response, automated debugging, performanc
 
 ## Tools
 
+
+### Kilobat CLI
+
+⭐ 1 star at submission | 🔗 [GitHub](https://github.com/seifip/kilobat-cli)
+
+**Description**: GPL-3.0-only macOS CLI and local MCP server for network monitoring and diagnostics. The separate desktop app is proprietary.
+
+**Key Features**:
+- Inspect connection status and Wi-Fi information
+- Diagnose DNS and host connectivity
+- Query network status through MCP
+
+**Installation**: On macOS 14+, install with `brew install seifip/kilobat/kilobat` (the documented build needs Xcode 16+). Some tools require system permissions or the companion app. Settings-changing tools request confirmation in their descriptions; clients control permission prompts.
+
+```json
+{
+  "mcpServers": {
+    "kilobat": {
+      "command": "kilobat",
+      "args": ["mcp"]
+    }
+  }
+}
+```
+
+If a GUI client cannot find `kilobat`, use the full executable path returned by `which kilobat`.
+
+---
+
 ### PostHog MCP
 
 ⭐ Official Integration | 🔗 [GitHub](https://github.com/PostHog/posthog-mcp)
