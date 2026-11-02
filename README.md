@@ -17,9 +17,9 @@ This repository catalogs tools built on the **Model Context Protocol (MCP)** and
 | [Web Data](categories/web-data/README.md) | 🌐 | Web scraping, search APIs, content fetching | 13 |
 | [File & Document](categories/file-document/README.md) | 📄 | File system access, PDF parsing, document processing | 8 |
 | [Execution](categories/execution/README.md) | ⚡ | Sandboxed code execution, cloud functions, shell commands | 13 |
-| [Monitoring](categories/monitoring/README.md) | 📊 | Error tracking, logging, analytics, CI/CD | 17 |
+| [Monitoring](categories/monitoring/README.md) | 📊 | Error tracking, logging, analytics, CI/CD | 18 |
 
-**Total: 73 tools**
+**Total: 74 tools**
 
 ## 🔧 What is MCP?
 
